@@ -1,6 +1,6 @@
-import _reduce from './internal/_reduce';
-import _xwrap from './internal/_xwrap';
-import curryN from './curryN';
+import _reduce from './internal/_reduce.js';
+import _xwrap from './internal/_xwrap.js';
+import curryN from './curryN.js';
 
 
 /**
@@ -17,7 +17,7 @@ import curryN from './curryN';
  * A transducer is a function that accepts a transformer and returns a
  * transformer and can be composed directly.
  *
- * A transformer is an an object that provides a 2-arity reducing iterator
+ * A transformer is an object that provides a 2-arity reducing iterator
  * function, step, 0-arity initial value function, init, and 1-arity result
  * extraction function, result. The step function is used as the iterator
  * function in reduce. The result function is used to convert the final

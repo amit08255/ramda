@@ -1,5 +1,5 @@
-import _curry2 from './internal/_curry2';
-import _assertPromise from './internal/_assertPromise';
+import _curry2 from './internal/_curry2.js';
+import _assertPromise from './internal/_assertPromise.js';
 
 
 /**
@@ -9,6 +9,7 @@ import _assertPromise from './internal/_assertPromise';
  *
  * @func
  * @memberOf R
+ * @since v0.27.1
  * @category Function
  * @sig (a -> b) -> (Promise e a) -> (Promise e b)
  * @sig (a -> (Promise e b)) -> (Promise e a) -> (Promise e b)
